@@ -1,0 +1,67 @@
+.btn-container {
+  display: flex;
+}
+
+.btn-container button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.toast-container {
+  position: fixed;
+  right: 20px;
+  width: 250px;
+
+
+
+
+}
+
+@keyframes slider {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.toast {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  margin: 10px;
+  border-radius: 20px;
+  animation: slider 2s 1;
+}
+
+.toast p {
+  padding-left: 10px;
+}
+
+.toast span {
+  padding-right: 15px;
+  color: black;
+  cursor: pointer;
+}
+
+.success {
+  background-color: green;
+}
+
+.info {
+  background-color: yellow;
+  color: black;
+}
+
+.warning {
+  background-color: orange;
+}
+
+.error {
+  background-color: red;
+}
